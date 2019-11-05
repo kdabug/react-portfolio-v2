@@ -3,8 +3,12 @@ import styled from "styled-components";
 
 const HeroContainer = styled.div``;
 
-function Hero() {
-  return <HeroContainer></HeroContainer>;
+function Hero(props) {
+  return (
+    <HeroContainer>
+      <img src={props.photo} alt={props.alt} />>
+    </HeroContainer>
+  );
 }
 
 export default Hero;

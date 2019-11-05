@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Hero from "../components/Hero";
-import Navigation from "../components/Navigation";
+import Hero from "./Hero";
+import Navigation from "./Navigation";
 
 const LayoutContainer = styled.div``;
 
 function Layout(props) {
   return (
     <LayoutContainer>
-      <Hero photo={props.photo} />
+      <Hero photo={props.photo} alt={props.alt} />
       <Navigation />
       {props.children}
     </LayoutContainer>

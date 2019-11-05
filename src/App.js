@@ -1,17 +1,18 @@
 import React from "react";
 import "./App.css";
 import Home from "./views/Home";
-import Navigation from "./components/Navigation";
 import Projects from "./views/Projects";
 import Contact from "./views/Contact";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Contact></Contact>
-      <Home></Home>
-      <Projects></Projects>
+      <Layout photo={selected.photo} alt={selected.alt}>
+        <Contact></Contact>
+        <Home></Home>
+        <Projects></Projects>
+      </Layout>
     </div>
   );
 }
