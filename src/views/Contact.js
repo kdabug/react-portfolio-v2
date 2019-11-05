@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Layout from "../components/Layout";
 
 const ContactContainer = styled.div`
   .card {
@@ -12,9 +13,10 @@ const ContactContainer = styled.div`
 function Contact() {
   return (
     <ContactContainer>
+      <h1>Contact Me</h1>
       <Form>
         <Form.Group controlId="formBasicInput">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Name</Form.Label>
           <Form.Control type="text" placeholder="Name" />
         </Form.Group>
 

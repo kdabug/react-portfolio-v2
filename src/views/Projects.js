@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ProjectsContainer = styled.div``;
 
 function Projects() {
-  return <ProjectsContainer></ProjectsContainer>;
+  return <ProjectsContainer>PROJECTS</ProjectsContainer>;
 }
 
 export default Projects;
