@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 const HomeContainer = styled.div``;
 
 function Home() {
-  return <HomeContainer></HomeContainer>;
+  return <HomeContainer>HOME</HomeContainer>;
 }
 
 export default Home;

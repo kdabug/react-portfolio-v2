@@ -9,7 +9,10 @@ function Layout(props) {
   return (
     <LayoutContainer>
       <Hero photo={props.photo} alt={props.alt} />
-      <Navigation />
+      <Navigation
+        navData={props.navData}
+        handleNavChange={props.handleNavChange}
+      />
       {props.children}
     </LayoutContainer>
   );
