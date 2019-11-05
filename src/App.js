@@ -22,9 +22,9 @@ function App() {
         handleNavChange={handleNavChange}
         navData={navData}
       >
-        <Contact />
-        <Home />
-        <Projects />
+        <Route exact path="/" render={() => <Contact />} />
+        <Route path="/contact" render={() => <Contact />} />
+        <Route path="/projects" render={() => <Projects />} />
       </Layout>
     </div>
   );
