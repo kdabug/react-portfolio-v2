@@ -1,4 +1,4 @@
-import MePic from "../photos/surf_mikayda.jpg";
+import MePic from "../photos/surf_mikayda2.jpg";
 import BradyPic from "../photos/brady.jpg";
 import DallinPic from "../photos/dallin_mikayda.jpg";
 

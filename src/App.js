@@ -10,9 +10,14 @@ import { Route } from "react-router-dom";
 function App() {
   const [selectedView, setSelectedView] = useState(navData[0]);
 
-  const handleNavChange = newSelectedView => {
-    //NavData.filter(name => );
-    setSelectedView(newSelectedView);
+  useEffect(() => {
+    console.log("useEffect", selectedView);
+  }, [selectedView]);
+
+  const handleNavChange = clickedNav => {
+    console.log("selectedView", selectedView);
+    const newSelectedView = navData.filter(el => clickedNav === el.name);
+    setSelectedView(newSelectedView[0]);
   };
   return (
     <div className="App">
@@ -20,9 +25,8 @@ function App() {
         photo={selectedView.photo}
         alt={selectedView.alt}
         handleNavChange={handleNavChange}
-        navData={navData}
       >
-        <Route exact path="/" render={() => <Contact />} />
+        <Route exact path="/" render={() => <Home />} />
         <Route path="/contact" render={() => <Contact />} />
         <Route path="/projects" render={() => <Projects />} />
       </Layout>

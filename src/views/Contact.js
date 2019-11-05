@@ -13,9 +13,10 @@ const ContactContainer = styled.div`
 function Contact() {
   return (
     <ContactContainer>
+      <h1>Contact Me</h1>
       <Form>
         <Form.Group controlId="formBasicInput">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Name</Form.Label>
           <Form.Control type="text" placeholder="Name" />
         </Form.Group>
 
